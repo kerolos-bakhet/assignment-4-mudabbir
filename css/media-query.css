@@ -1,0 +1,313 @@
+/*.//////////////////////////////// l Tablet ///////////////////////////////*/
+@media screen and (max-width: 1280px) {
+    /* container  */
+    .container {
+    grid-template-columns: 63px auto;
+    }
+    /* sidebar  */
+    .sidebar {
+        width: 63px;
+        padding: 12px;
+        align-items: center;
+    }
+    /* header part  */
+    .m-hide{
+        display: none;
+    }
+    .sidebar-header > span{
+    width: 39px;
+    height: 40px;
+    box-shadow: none;
+    }
+    .sidebar-header > span img {
+    width: 20px;
+    height: 20px;
+    }
+    /* sidebar middle part */
+    .sidebar-middle span {
+        width: fit-content;
+        padding: 12px 8px;
+    }
+    /* main container  */
+    .main-content {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sum-pound sum-pound"
+    "activites income"
+    "table table"
+    "bills summary"
+    "overview payment"
+    ;
+    grid-template-columns: 1fr 1fr;
+    }
+    .inner-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+/* Tablet screen */
+@media screen and (max-width: 1024px) {
+    .pound .value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #101828;
+    }
+    .sum-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sum-card p {
+        align-self: flex-end;
+    }
+    .sum .sum-upper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sum .sum-upper .left-part {
+        align-self: flex-end;
+    }
+    .upper-prog {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .upper-prog .left-part {
+    align-self: flex-end;
+    }
+    .inner-table {
+        width: 100%;
+        overflow-x: scroll ;
+    }
+    .inner-table {
+    width: 100%;
+    overflow-x: auto;
+    }
+}
+
+/*.///////////////////////////////// Mobile screen .////////////////////// */
+
+@media screen and (max-width: 768px) {
+    .container { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "main";
+    }
+    .container .sidebar {
+        display: none;
+    }
+
+    .container .main-content {
+        padding: 16px;
+    }
+
+    .header { 
+        padding: 16px;
+        height: fit-content;
+        align-self: start;
+    }
+
+    .right-content {
+        gap: 12px;
+    }
+    .right-content .coin-span{
+    width: 48px;
+    height: 48px;
+    }
+    .right-content .coin-span img{
+    width: 24px;
+    height: 24px;
+    }
+    .right-content .side-content {
+        gap: 0;
+    }
+    .right-content .side-content h1 {
+        font-size: 24px;
+    }
+    .right-content .side-content p {
+        font-size: 12px;
+    }
+    .right-content .online {
+        padding: 4px 8px;
+    }
+    .right-content .online .online-text {
+        font-size: 12px;
+    }
+    .info-card {
+        gap: 8px;
+    }
+    .left-content .search-btn {
+        width: 30px;
+        height: 30px;
+    }
+    .left-content button img {
+    width: 18px;
+    height: 18px;
+    }
+    .left-content .bell-btn {
+        margin-inline: 4px 8px;
+        width: 30px;
+        height: 30px;
+    }
+    .left-content span {
+    width: 12px;
+    height: 12px;
+    }
+    .info-card {
+    padding: 8px 12px;
+    }
+    .info-card .person-info .p-1 {
+    font-size: 12px;
+    }
+    .info-card .person-info .p-2 {
+        display: none;
+    }
+    .info-card .person-info {
+        display: flex;
+        justify-content: center;
+    }
+    .info-card img {
+    width: 32px;
+    height: 32px;
+    border-radius: 12px;
+    }
+    .main-content {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "sum-pound"
+    "activites"
+    "table"
+    "bills"
+    "overview"
+    "income"
+    "summary"
+    "payment"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 32px;
+    row-gap: 16px;
+    column-gap: 16px;
+    background-color: #F9FAFB;
+
+    }
+    .sum-pound {
+    grid-area: sum-pound;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 24px;
+    align-items: stretch;
+    }
+    .pound .value {
+    font-size: 30px;
+    font-weight: 700;
+    color: #101828;
+    }
+    .activites {
+        padding: 16px;
+    }
+    .activites h3 {
+    font-size: 16px;
+    }
+    .table .table-title h3 {
+    font-size: 16px;
+    }
+    .table .table-title span {
+    font-size: 12px;
+    }
+
+    td {
+    padding: 8px 4px;
+    font-size: 12px;
+    }
+    .names #name-1 {
+    font-size: 12px;
+    }
+    .names #name-2 {
+    font-size: 12px;  
+    }
+    .table {
+    padding: 16px;
+    overflow: hidden;
+    }
+    th {
+    font-size: 12px;
+    padding: 8px 4px;
+    }
+    .details img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    }
+    .sum .sum-upper {
+        flex-direction: row;
+    }
+    .upper-prog {
+        flex-direction: row;
+    }
+    .sum-card {
+        flex-direction: row;
+    }
+    .inner-table {
+        width: 100%;
+        overflow-x: scroll ;
+    }
+}
+
+/*.///////////////////////// small mobile screen ////////////////////////  */
+@media screen and (max-width: 640px) {
+    .sm-hide {
+        display: none;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header .online-dott {
+    width: 100%;    
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background-color: #F0FDF4;
+    border: 1px solid #DBFCE7;
+    border-radius: 8px;
+    display: flex;
+    }
+    .header .online-dott .online-text  {
+    color: #008236;
+    font-size: 12px;
+    font-weight: 500;
+    }
+
+    .header .online-dott .dott{
+    width: 8px;
+    height: 8px;
+    background-color: #8cffb5;
+    border-radius: 50%;
+    animation: glow 1s infinite alternate;
+    }
+
+    .left-content {
+        width: 100%;
+    }
+    .info-card {
+        margin-right: auto;
+        gap: 0;
+    }
+    table {
+    min-width: 650px;    
+    }
+    .inner-table {
+        overflow-x: auto;
+    }
+    
+}
+
+
+
+
+
+
